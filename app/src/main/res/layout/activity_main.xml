@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="Empresa Viaje Feliz" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/etcodigo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="Digite codigo viaje" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/etnombre"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="Digite nombre responsable" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/etciudad"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="Digite ciudad destino" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/etcantidad"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:inputType="number"
+        android:hint="Cantidad de personas" />
+
+    <CheckBox
+        android:id="@+id/cbactivo"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="25dp"
+        android:enabled="false"
+        android:layout_height="wrap_content"
+        android:text=" Activo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btconsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:onClick="Consultar"
+            android:text="Consultar" />
+
+        <Button
+            android:id="@+id/btadicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Adicionar"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:text="Adicionar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btmodificar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:onClick="Modificar"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/bteliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Eliminar"
+            android:onClick="Eliminar"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btanular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:onClick="Anular"
+            android:text="Anular" />
+
+        <Button
+            android:id="@+id/btcancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:onClick="Consultar"
+            android:text="Cancelar" />
+    </LinearLayout>
+
+</LinearLayout>
